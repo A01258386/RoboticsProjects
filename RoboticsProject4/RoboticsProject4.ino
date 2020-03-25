@@ -1,5 +1,5 @@
 
-//Sensetive Light
+//Sensetive Light with Potentiometer
 #define Led 3
 #define Pot A0
 
