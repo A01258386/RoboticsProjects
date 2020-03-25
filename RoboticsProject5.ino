@@ -1,3 +1,4 @@
+//Automatic Light Sensor
 #define led 3
 
 void setup() {
@@ -9,15 +10,15 @@ void setup() {
 
 void loop() {
 
-  int isik = analogRead(A0);
-  Serial.println(isik);
+  int light = analogRead(A0);
+  Serial.println(light);
   delay(50);
 
-  if(isik > 155){
+  if(light > 155){
     digitalWrite(led,LOW);
   }
 
-  if(isik < 150){
+  if(light < 150){
     delay(1500);
     digitalWrite(led,HIGH);
   }
